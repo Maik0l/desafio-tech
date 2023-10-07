@@ -12,6 +12,8 @@ class EditProfile extends StatefulWidget {
 }
 
 class _EditProfileState extends State<EditProfile> {
+  /* Novamente aqui queria componentizar mais alguns recursos, como os inputs.*/
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

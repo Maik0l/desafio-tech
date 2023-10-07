@@ -10,13 +10,13 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  // Dados mockados para teste no app
+
   String userName = "Cidade ADM de MG";
   String bio = "Perfil Oficial da Cidade Administrativa de MG";
   String local = "Cidade administrativa";
 
   bool activity = true;
-
-  // List<String> feed2 = [nameUser, ];
 
   List<Feed> feed = [
     Feed(
@@ -42,6 +42,11 @@ class _HomeState extends State<Home> {
   ];
   @override
   Widget build(BuildContext context) {
+    /* Para simplificar um pouco eu fiz um ternário para trocar o conteúdo mostrado entre as 
+    atividades e seções. Meu plano era componentizar muito mais o app, fazer componentes que ficaram se
+     repetindo, mas não consegui por causa do tempo. Também queria componentizar as telas para diminuir o 
+     tamanho da tela.*/
+
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
           showSelectedLabels: false,
